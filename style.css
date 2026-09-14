@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #F3E9D8;
+  --panel: #FBF5EA;
+  --ink: #141013;
+  --muted: #5E5560;
+  --wine: #A34A5C;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 Fredoka, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+a { color: var(--wine); }
+
+.home {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+h1 { font-size: 36px; line-height: 1.2; margin: 24px 0 4px; }
+h2 { font-size: 22px; margin: 36px 0 8px; }
+h3 { font-size: 18px; margin: 20px 0 4px; }
+.date { color: var(--muted); margin: 0 0 20px; }
+.lead { font-size: 19px; }
+ul { padding-left: 22px; }
+li { margin-bottom: 6px; }
+
+.box {
+  background: var(--panel);
+  border-radius: 20px;
+  padding: 4px 24px 12px;
+  margin: 24px 0;
+}
+.box h2 { margin-top: 16px; }
+
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid #E0D2BA;
+  color: var(--muted);
+}
+
+.front { text-align: center; padding-top: 80px; }
+.front h2, .front p:not(.wordmark):not(.tagline) { text-align: left; }
+.wordmark { font-weight: 700; font-size: 88px; line-height: 1; margin: 0; letter-spacing: 0.5px; }
+.tagline { font-weight: 500; font-size: 22px; margin: 12px 0 48px; }
